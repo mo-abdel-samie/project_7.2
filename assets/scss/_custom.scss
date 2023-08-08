@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
+$danger: rgb(255, 153, 0);
+$primary: rgb(56, 111, 230);
+
+@import "../../node_modules/bootstrap/scss/variables";
+
+// Create your own map
+$custom-theme: (
+    "altpink": $pink-600,
+    "altblue": rgb(98, 98, 194)
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-theme);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
